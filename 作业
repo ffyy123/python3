@@ -1,0 +1,18 @@
+number = random.randint(10,99)  #产生两个100以下随机数，提示用户输入这两个数的和。如果答案是正确的，结果为真，否则为假
+print(number)
+N=input('两个整数之和')
+number_shi=number//10
+number_ge=number%10
+if N[0] == '0':
+    N_shi == 0
+else:
+    N_shi=int(N)//10
+    N_ge=int(N)%10
+
+if number == int(N):
+    print('10000')
+#elif (number_shi==N_shi or number_shi==N_ge)and(number_ge==N_shi or number_ge==N_ge):
+elif number_shi+number_ge==N_shi+N_ge:
+    print('1000')
+elif (number_ge==N_ge or number_ge==N_shi)or(number_shi==N_ge or number_shi==N_shi):
+    print('1000')
